@@ -130,7 +130,7 @@ class AboutTraversables extends KoanSuite with ShouldMatchers {
           |  are needed.""") {
     val list = List(4, 6, 7, 8, 9, 13, 14)
     val result = list.toStream
-    result.isInstanceOf[Stream[_]] should be(__)
+    result.isInstanceOf[Stream[_]] should be(true)
     (result take 3) should be(List(__, __, __))
   }
 
