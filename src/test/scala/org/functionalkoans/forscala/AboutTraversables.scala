@@ -547,6 +547,6 @@ class AboutTraversables extends KoanSuite with ShouldMatchers {
   koan( """Views can also accept a `to` and `from` value which takes a subset and performs your view
           |  functions on the subset.""") {
     val list = List(1, 2, 3, 4, 5, 6, 7, 8)
-    list.view(3, 6).map(_ + 2).map(_ * 10).force should be(List(50, 60, 70))
+    list.view(3, 6).map(_ + 2).map(_ * 10).force should be(List(60, 70, 80))
   }
 }
